@@ -1,0 +1,92 @@
+@import "./reset.css";
+
+:root {
+  --flash-white: rgb(241, 242, 240);
+  --link-water: rgb(211,229,241);
+  --perfume: rgb(222,180,245);
+  --clairvoyant: rgb(100,13,113);
+  --imperial: rgba(73, 48, 107);
+  --green-sheen: rgba(112, 204, 158, 1);
+  --dust-storm: rgba(227, 201, 193, 1);
+  --moonstone-blue: rgba(127, 188, 189, 1);
+  --moonstone-blue-25: rgba(127, 188, 189, 0.25);
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.container {
+  width: calc(100% - 10rem);
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  border-bottom: 1px solid var(--imperial);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: content;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  gap: 2rem 1rem;
+  margin-top: 3rem;
+  background-color: var(--moonstone-blue-25);
+  padding: 1.5rem 5rem;
+}
+
+.footer {
+  text-align: center;
+  grid-area: footer;
+  margin: auto;
+  border-top: 1px solid var(--imperial);
+}
+
+.header-figure {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
+
+.header-title {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  font-size: 2.5rem;
+}
+
+.content>h1 {
+  font-size: 2rem;
+}
+
+.card {
+  display: flex;
+}
+
+.card-link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.card-title {
+  text-decoration: underline;
+}
