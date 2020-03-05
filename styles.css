@@ -9,7 +9,7 @@
   --green-sheen: rgba(112, 204, 158, 1);
   --dust-storm: rgba(227, 201, 193, 1);
   --moonstone-blue: rgba(127, 188, 189, 1);
-  --moonstone-blue-25: rgba(127, 188, 189, 0.25);
+  --moonstone-blue-05: rgba(127, 188, 189, 0.05);
 }
 
 .page {
@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(4, minmax(10rem, 1fr));
   gap: 2rem 1rem;
   margin-top: 3rem;
-  background-color: var(--moonstone-blue-25);
+  background-color: var(--moonstone-blue-05);
   padding: 1.5rem 5rem;
 }
 
