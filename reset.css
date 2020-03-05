@@ -8,6 +8,18 @@ font-family: 'Crete Round', serif; */
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
+:root {
+  --flash-white: rgb(241, 242, 240);
+  --link-water: rgb(211,229,241);
+  --perfume: rgb(222,180,245);
+  --clairvoyant: rgb(100,13,113);
+  --imperial: rgba(73, 48, 107);
+  --green-sheen: rgba(112, 204, 158, 1);
+  --dust-storm: rgba(227, 201, 193, 1);
+  --moonstone-blue: rgba(127, 188, 189, 1);
+  --moonstone-blue-05: rgba(127, 188, 189, 0.05);
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,

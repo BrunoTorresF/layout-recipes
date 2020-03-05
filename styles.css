@@ -1,15 +1,7 @@
 @import "./reset.css";
 
-:root {
-  --flash-white: rgb(241, 242, 240);
-  --link-water: rgb(211,229,241);
-  --perfume: rgb(222,180,245);
-  --clairvoyant: rgb(100,13,113);
-  --imperial: rgba(73, 48, 107);
-  --green-sheen: rgba(112, 204, 158, 1);
-  --dust-storm: rgba(227, 201, 193, 1);
-  --moonstone-blue: rgba(127, 188, 189, 1);
-  --moonstone-blue-05: rgba(127, 188, 189, 0.05);
+html {
+  background-color: white;
 }
 
 .page {
@@ -111,4 +103,58 @@ h1, h2, h3, h4 {
 
 .card-title {
   text-decoration: underline;
+}
+
+/* Styles for browser window smaller than 36em */
+@media (max-width: 36em) {
+
+  .header {
+    display: grid;
+    grid-area: header;
+    align-items: center;
+    border-bottom: 1px solid var(--imperial);
+    margin-bottom: 1.25rem;
+  }
+
+  .header-title {
+    grid-column-start: 1;
+    font-size: 1.5rem;
+  }
+  .container {
+    width: calc(100% - 1.5rem);
+  }
+
+  .header-figure {
+    display: none;
+  }
+}
+
+
+/* Styles for browser window smaller than 36em */
+@media (max-width: 48em) {
+  .container {
+    width: calc(100% - 2.5rem);
+    margin: 0 auto;
+  }
+
+  .header-figure {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0 auto;
+  }
+
+}
+
+/* Styles for browser window smaller than 36em */
+@media (max-width: 72em) {
+  .container {
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+  }
+
+  .header-figure {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0 auto;
+  }
 }
