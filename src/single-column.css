@@ -37,7 +37,7 @@ h1, h2, h3, h4 {
   justify-content: flex-end;
 }
 
-.nav-back-link {
+.go-back {
   color: var(--clairvoyant);
 }
 
@@ -222,10 +222,6 @@ h1, h2, h3, h4 {
 .follow {
   flex: 0 0 auto;
   margin-left: 0.5em;
-}
-
-.article-date {
-
 }
 
 .social-media {
